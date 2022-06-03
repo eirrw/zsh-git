@@ -153,6 +153,9 @@ alias gremsh='git remote show'
 alias gremv='git remote -v'
 alias grl='git reflog' # Useful to restore lost commits after reset
 alias grm='git rm'
+alias grt='git restore'
+alias grts='git restore --staged'
+alias grtsw='git restore --source=HEAD -SW'
 
 # Yes, I am aware gs is commonly aliased to ghostscript,
 # but since my usage of ghostscript is rare compared to git,
@@ -181,6 +184,10 @@ alias gsubpl='git submodule foreach git pull'
 alias gsubplom='git submodule foreach git pull origin $(git_main_branch)'
 alias gsubs='git submodule status'
 alias gsubu='git submodule update --remote --merge' # Update submodules
+alias gsw='git switch'
+alias gswc='git switch -c'
+alias gswm='git switch $(git_main_branch)'
+alias gswd='git switch develop'
 
 alias gt='git tag'
 alias gtam='git tag -am' # <- takes message before annotated tag name: e.g. gtam 'Release v1.0.0' v1.0.0
