@@ -19,20 +19,6 @@ intuitive they can possibly be.
 On top of that, quite a few extra functions are added.
 
 
-## Installation
-To use this plugin, clone this repo to `~/.oh-my-zsh/custom/plugins`:
-```
-git clone https://github.com/davidde/git.git ~/.oh-my-zsh/custom/plugins/git
-```
-This will automatically override the default git plugin.
-
-If you aren't yet using the default plugin,
-add `git` to the plugins in your `~/.zshrc` file:
-```
-plugins=(git)
-```
-
-
 ## Aliases cheatsheet
 
 | Alias           | Command                                                   |
@@ -126,6 +112,9 @@ plugins=(git)
 | **grhhard**     | git_reset_head --hard                                     |
 | **grhk**        | git_reset_head --keep                                     |
 | **grhs**        | git_reset_head --soft                                     |
+| **grt**         | git restore                                               |
+| **grts**        | git restore --staged                                      |
+| **grtsw**       | git restore --source=HEAD -SW                             |
 | **grb**         | git rebase                                                |
 | **grbm**        | git rebase $(git_main_branch)                             |
 | **grem**        | git remote                                                |
@@ -149,6 +138,10 @@ plugins=(git)
 | **gstpop**      | git stash pop                                             |
 | **gstsl**       | git stash show -l                                         |
 | **gstsp**       | git stash show -p                                         |
+| **gsw**         | git switch                                                |
+| **gswc**        | git switch -c                                             |
+| **gswm**        | git switch $(git_main_branch)                             |
+| **gswd**        | git switch develop                                        |
 | **gsub**        | git submodule                                             |
 | **gsuba**       | git submodule add                                         |
 | **gsubi**       | git submodule update --init                               |
@@ -176,9 +169,7 @@ plugins=(git)
 >   - `git commit -m --gpg-sign` has its flags switched because `-m` needs to be last.
 >   - Etc.
 > 
-> Check out all commands with usage and clarifications in your local
-> [git.plugin.zsh](./git.plugin.zsh) or the
-> [repo's source code](https://github.com/davidde/git/blob/master/git.plugin.zsh).  
+> Check out all commands with usage and clarifications in [git.plugin.zsh](./git.plugin.zsh).
 > 
 > Alternatively, run `alias` to see *all* alias implementations,
 > or `galias` for this cheatsheet.  
