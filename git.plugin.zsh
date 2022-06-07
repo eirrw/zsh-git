@@ -80,6 +80,7 @@ alias gdsth='git diff stash@{0} HEAD'
 alias gdstp='git diff stash@{0}^ stash@{0}' # = git stash show -p
 
 alias gf='git fetch'
+alias gfa='git fetch --all'
 alias gfo='git fetch origin'
 
 # git graph branches:
